@@ -1,0 +1,42 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	width: 100vw;
+	overflow-x: hidden;
+}
+body {
+	font-size: 12px;
+	line-height: 1;
+  background-color: $color-1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+  max-width: 100%;
+}

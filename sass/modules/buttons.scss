@@ -1,0 +1,61 @@
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: $color-6;
+  transition: all 0.5s ease;
+  border-bottom: solid 2px transparent;
+  transform: scale(1, 1);
+
+  &:hover {
+    border-bottom: solid 2px $color-6;
+    color: $color-4;
+    transform: scale(1.05, 1.05);
+    font-size: 1.1em
+  }
+}
+
+a.secondary {
+  @extend a;
+  color: $color-5;
+
+  &:hover {
+    border-bottom: solid 2px $color-5;
+    color: $color-4;
+  }
+}
+
+.btn {
+  background-color: $color-6;
+  color: $color-1;
+  margin: $pad-xs;
+  display: inline-block;
+  border-radius: 5px;
+  padding: $pad-xs $pad;
+  text-align: center;
+
+  &:hover {
+    color: $color-1;
+    border-bottom: solid 2px $color-5;
+    background-color: $color-4;
+  }
+
+  &--secondary {
+    @extend .btn;
+    background-color: $color-5;
+
+    &:hover {
+      border-bottom: solid 2px $color-6;
+    }
+  }
+
+  &--outline {
+    @extend .btn;
+    color: $color-5;
+    background-color: transparent;
+    border: solid 3px $color-6;
+
+    &:hover {
+      border-bottom: solid 2px $color-6;
+    }
+  }
+}

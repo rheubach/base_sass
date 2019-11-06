@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SASS Base</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <nav>
+    <h1>Base Styles</h1>
+  </nav>
+  <div class="u-contain--wide">
+    <div class="grid grid-2col--lg u-push-bottom--sm">
+      <div class="card">
+        <div class="card__content">
+          <h2>Typography</h2>
+          <h1>Headeing 1</h1>
+          <h2>Headeing 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5 class="u-push-bottom--xs">Heading 5</h5>
+          <p class="u-push-bottom--sm">Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="caption u-push-bottom--sm">Caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+          <p class="caption u-push-bottom--sm"><b>Bold: Lorem ipsum</b> <i>Italic: Lorem ipsum</i></p>
+          <p class="caption"><strong>Bold: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__content">
+          <h2>Colors</h2>
+          <div class="grid grid-2col">
+            <div class="section-color--1 u-padded u-border-radius">
+              <p class="caption"><b>#fefefe</b><br />.section-color--1<br />.color--1<br />.border-color--1</p>
+            </div>
+            <div class="section-color--2 u-padded u-border-radius">
+              <p class="caption"><b>#002140</b><br />.section-color--2<br />.color--2<br />.border-color--2</p>
+            </div>
+            <div class="section-color--3 u-padded u-border-radius">
+              <p class="caption"><b>#0d00a4</b><br />.section-color--3<br />.color--3<br />.border-color--3</p>
+            </div>
+            <div class="section-color--4 u-padded u-border-radius">
+              <p class="caption"><b>#f3a712</b><br />.section-color--4<br />.color--4<br />.border-color--4</p>
+            </div>
+            <div class="section-color--5 u-padded u-border-radius">
+              <p class="caption"><b>#e4572e</b><br />.section-color--5<br />.color--5<br />.border-color--5</p>
+            </div>
+            <div class="section-color--6 u-padded u-border-radius">
+              <p class="caption"><b>#930562</b><br />.section-color--6<br />.color--6<br />.border-color--6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__content">
+          <h2>Form Elements</h2>
+          <form class="form">
+            <label>Text Field</label>
+            <input name="firstname" type="text" placeholder="First Name" />
+            <label>Text Area</label>
+            <textarea form="form_id" placeholder="Text Goes Here"></textarea>
+            <label>Dropdown Selection</label>
+            <div class="select__container">
+              <select name="drowpown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+              </select>
+            </div>
+            <div class="checkbox__list">
+              <p>Checkbox Options</p>
+              <div class="checkbox__wrap">
+                <input class="checkbox" type="checkbox" id="checkbox1" value="option1"> <label for="checkbox1">Checkbox One</label>
+              </div>
+              <div class="checkbox__wrap">
+                <input class="checkbox" type="checkbox" id="checkbox2" value="option1"> <label for="checkbox2">Checkbox Two</label>
+              </div>
+            </div>
+            <div class="radio__list">
+              <p>Radio Options</p>
+              <div class="radio__wrap">
+                <input class="radio" type="radio" name="radio1" value="option1"> <p>Radio One</p>
+              </div>
+              <div class="radio--wrap">
+                <input class="radio" type="radio" name="radio2" value="option1"> <p>Radio Two</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__content">
+          <h2>Buttons & Links</h2>
+          <div class="u-padded--sm u-center">
+            <a href="#" class="u-push-right">Link One</a> <a href="#" class="secondary">Link Two</a>
+          </div>
+          <div class="u-padded--sm u-center">
+            <a href="#" class="btn">Button</a>
+          </div>
+          <div class="u-padded--sm u-center">
+            <a href="#" class="btn--secondary">Button Secondary</a>
+          </div>
+          <div class="u-padded--sm u-center">
+            <a href="#" class="btn--outline">Button Outline</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__content">
+        <h2>Grid System</h2>
+        <div class="u-padded--sm u-center">
+          <a href="#" class="u-push-right">Link One</a> <a href="#" class="secondary">Link Two</a>
+        </div>
+        <div class="u-padded--sm u-center">
+          <a href="#" class="btn">Button</a>
+        </div>
+        <div class="u-padded--sm u-center">
+          <a href="#" class="btn--secondary">Button Secondary</a>
+        </div>
+        <div class="u-padded--sm u-center">
+          <a href="#" class="btn--outline">Button Outline</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+//MAIN GRID
+.grid {
+  display:-ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: $pad-sm;
+
+  //2 COLUMNS
+  &-2col {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-2col--md {
+    @media screen and (min-width: $screen-tablet) {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &-2col--lg {
+    @media screen and (min-width: $screen-desktop) {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  //3 COLUMNS
+  &-3col {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &-3col--md {
+    @media screen and (min-width: $screen-tablet) {
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &-3col--lg {
+    @media screen and (min-width: $screen-desktop) {
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  //4 COLUMNS
+  &-4col {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &-4col--md {
+    @media screen and (min-width: $screen-tablet) {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &-4col--lg {
+    @media screen and (min-width: $screen-desktop) {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  //5 COLUMNS
+  &-5col {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &-5col--md {
+    @media screen and (min-width: $screen-tablet) {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &-5col--lg {
+    @media screen and (min-width: $screen-desktop) {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+
+  &--baseline {
+    align-items: baseline;
+  }
+
+  &--end {
+    align-items: end;
+  }
+
+  &__child {
+    &--column-start-1 {
+      grid-column-start: 1;
+      -ms-grid-column: 1;
+    }
+
+    &--span-2 {
+      -ms-grid-column-span: 2;
+      grid-column: span 2;
+    }
+
+    &--span-3 {
+      -ms-grid-column-span: 3;
+      grid-column: span 3;
+    }
+
+    &--span-all {
+      -ms-grid-column: 1 / -1;
+      grid-column: 1 / -1;
+    }
+
+    &--row-1 {
+      @media screen and (min-width: $screen-tablet) {
+        -ms-grid-row: 1;
+        grid-row: 1;
+      }
+    }
+  }
+}

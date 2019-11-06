@@ -1,0 +1,62 @@
+html, body {
+ color: $color-2;
+ font-family: $font-body;
+ font-size: var(--font-size-base);
+ font-weight: 400;
+ letter-spacing: .5px;
+ line-height: grid(1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: $font-header;
+ font-weight: 800;
+ letter-spacing: 0;
+}
+
+h1, h2.h1 {
+ font-size: $h1-font-size-base;
+ line-height: grid(3);
+}
+h2 {
+ font-size: $h2-font-size-base;
+ line-height: grid(2);
+}
+h3 {
+ font-size: $h3-font-size-base;
+}
+h4 {
+ font-size: $h4-font-size-base;
+}
+h5 {
+ font-size: $h5-font-size-base;
+}
+p {
+
+}
+
+.caption {
+ font-size: $font-size-sm;
+ font-weight: 200;
+ line-height: grid(.5);
+}
+
+strong {
+ font-weight: 800;
+}
+i {
+ font-style: italic;
+}
+b {
+ font-weight: 600;
+}
+
+a {
+
+ &:hover,
+ &:active,
+ &:focus,
+ &.current {
+   background-position: 0 0;
+   outline: 0;
+ }
+}
